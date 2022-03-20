@@ -1,0 +1,28 @@
+.contacts {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-width: 40rem;
+}
+
+.search {
+  width: 55%;
+}
+
+.entry {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.entry > * {
+  margin: 0.5rem 0.25rem;
+}
+
+.control {
+  width: 4rem;
+}
+
+.editable {
+  flex: 8;
+  min-width: 8rem;
+}

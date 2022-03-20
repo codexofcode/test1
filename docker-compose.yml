@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  node:
+    image: node:17-alpine
+    environment:
+      MYUSER: a
+      MYPASS: b
+      MYSECRET: cv-task-secret
+    ports:
+      - "127.0.0.1:8080:8080"
+    user: node
+    working_dir: /home/node
+    volumes:
+      - .:/home/node:ro
+    command: ["npm", "start"]
